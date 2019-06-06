@@ -1,0 +1,50 @@
+{
+  "seg_net": {
+    "labels": [
+      "0",
+      "background",
+      "wrench",
+      "pipe"
+    ],
+    "n_points": 16384,
+    "n_channels": 6,
+    "ptn_model": "./weights/model.acc.030.0.9973.hdf5"
+  },
+  "grasp_infer": {
+    "model_path": "E:/CLOUD/GDrive(t105ag8409)/Projects/ARLab/Point Cloud Robot Grasping/robot_system/obj_models/modelMay10",
+    "model_path1": "E:/CLOUD/GDrive(t105ag8409)/Projects/ARLab/Point Cloud Robot Grasping/camera/orbbec_astra_s/recorded_data/standard_model_May31",
+    "coords": {
+      "neutral_point": {
+        "robot_coord": [-158.42, 242.23, -23.54],
+        "camera_coord": [0, 0, 677]
+      }
+    },
+    "transformation": {
+      "rotx": 180,
+      "roty": 0,
+      "rotz": -90,
+      "tranl": [242.23, -158.42, -253.46],
+      "tranl_xtran": [
+        [1, 0, 0, -242.23],
+        [0, 1, 0, 158.42],
+        [0, 0, 1, 453.46],
+        [0, 0, 0, 1]
+      ],
+      "r2c_xtran": [
+        [0, 1, 0, -242.23],
+        [1, 0, 0, 158.42],
+        [0, 0, -1, 453.46],
+        [0, 0, 0, 1]
+      ],
+      "c2r_xtran": [
+        [0, 1, 0, -158.42],
+        [1, 0, 0, 242.23],
+        [0, 0, -1, 453.46],
+        [0, 0, 0, 1]
+      ]
+    }
+  },
+  "camera": {
+    "astra_redist": "../camera/orbbec_astra_s/Redist"
+  }
+}
